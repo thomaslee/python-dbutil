@@ -1,7 +1,7 @@
 from urlparse import urlparse
 from pprint import saferepr
 
-version = (0, 2, 0)
+version = (0, 3, 0)
 
 class row(object):
     def __init__(self, desc, data):
