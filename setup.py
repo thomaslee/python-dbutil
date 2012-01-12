@@ -21,6 +21,6 @@ setup(name="dbutil",
       maintainer="Tom Lee",
       maintainer_email="pypi@tomlee.co",
       url="http://github.com/thomaslee/python-mindbx",
-      license="GPLv3",
+      license="MIT",
       packages=find_packages(),
 )
