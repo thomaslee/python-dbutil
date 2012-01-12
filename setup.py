@@ -20,7 +20,7 @@ setup(name="dbutil",
       author_email="pypi@tomlee.co",
       maintainer="Tom Lee",
       maintainer_email="pypi@tomlee.co",
-      url="http://github.com/thomaslee/python-mindbx",
+      url="http://github.com/thomaslee/python-dbutil",
       license="MIT",
       packages=find_packages(),
 )
