@@ -32,7 +32,7 @@ class connection(object):
         return self
 
     def __exit__(self, *args):
-        self.close()
+        self.impl.close()
 
     def getone(self, query, params=None):
         if params is None:
