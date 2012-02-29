@@ -14,7 +14,7 @@ class connection(object):
     def __exit__(self, *args):
         self.impl.close()
 
-    def getone(self, query, params=None):
+    def one(self, query, params=None):
         if params is None:
             params = tuple()
         with self.impl as crs:
@@ -24,7 +24,7 @@ class connection(object):
             else:
                 return crs.fetchone()[0]
 
-    def getrow(self, query, params=None):
+    def row(self, query, params=None):
         if params is None:
             params = tuple()
         with self.impl as crs:
@@ -34,7 +34,7 @@ class connection(object):
             else:
                 return row(crs.description, crs.fetchone())
 
-    def getall(self, query, params=None):
+    def all(self, query, params=None):
         if params is None:
             params = tuple()
         with self.impl as crs:
