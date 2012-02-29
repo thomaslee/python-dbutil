@@ -39,22 +39,22 @@ with Python.
         
 ### Get a single value
 
-    num_users = conn.getone("SELECT COUNT(*) FROM users")
+    num_users = conn.one("SELECT COUNT(*) FROM users")
     print num_users
 
 ### Get the first row from a result set
 
-    user = conn.getrow("SELECT * FROM users WHERE id=%s", (1,))
+    user = conn.row("SELECT * FROM users WHERE id=%s", (1,))
     print user
 
 ### Get all rows from a result set
 
-    users = conn.getall("SELECT * FROM users")
+    users = conn.all("SELECT * FROM users")
     print users
 
 ### Efficiently iterate over a result set
 
-    for user in conn.getall("SELECT * FROM users"):
+    for user in conn.iter("SELECT * FROM users"):
         print user
 
 ### Efficiently apply a function to each row returned by a query
