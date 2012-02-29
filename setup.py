@@ -9,7 +9,7 @@ except ImportError:
 
 import dbutil
 
-LONG_DESCRIPTION = """
+LONG_DESCRIPTION = """A minimal wrapper for the Python DB API 2.0.
 """
 
 setup(name="dbutil",
