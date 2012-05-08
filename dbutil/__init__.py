@@ -1,7 +1,7 @@
 from urlparse import urlparse
 from .connection import connection
 
-version = (0, 4, 0)
+version = (0, 5, 0)
 
 def _connect_mysql(url):
     import MySQLdb as db
